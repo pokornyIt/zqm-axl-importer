@@ -1,0 +1,29 @@
+axl:
+  server: c09-cucm-a.devlab.zoomint.com
+  user: ccmadmin
+  password: zoomadmin
+  accessGroup: ZOOM QM Access Group
+zqm:
+  jtapiUser:
+    - callrec
+    - zpokorny
+  dbServer: pm028.pm.zoomint.com
+  dbUser: axluser
+  dbPassword: a4lUs3r.
+  javaXTerm: ''
+  javaFlush: ''
+log:
+  level: TRACE
+  fileName:
+  jsonFormat: false
+  logProgramInfo: true
+processing:
+  hoursBack: 24
+  userImportHour:
+    - 4
+    - 16
+  defaultTeamName: _CUCM_imported
+  mappingType: both
+  setDirection: true
+  coexistCcxImporter: true
+

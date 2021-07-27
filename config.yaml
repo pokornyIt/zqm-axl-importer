@@ -1,0 +1,34 @@
+axl:
+  server: cucm.server
+  user: cucm.user
+  password: secret.password
+  accessGroup: ZOOM QM Access Group
+  ignoreCertificate: false
+zqm:
+  jtapiUser:
+    - jtapi.user
+  dbServer: localhost
+  dbUser: axluser
+  dbPassword: a4lUs3r.
+  javaXTerm: '/opt/zqm-axl/jmxterm-1.0.1-uber.jar'
+  javaFlush: '/opt/zqm-axl/flush_sc_cache.txt'
+log:
+  level: INFO
+  fileName: '/opt/callrec/logs/zqm-axl-importer.log'
+  jsonFormat: false
+  logProgramInfo: false
+  maxSize: 50
+  maxBackups: 5
+  maxAge: 30
+  quiet: false
+processing:
+  hoursBack: 24
+  userImportHour:
+    - 4
+    - 16
+  defaultTeamName: _CUCM_imported
+  defaultRoleName: Agent
+  updateInterval: 5
+  mappingType: both
+  setDirection: true
+  coexistCcxImporter: false

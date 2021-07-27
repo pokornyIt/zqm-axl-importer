@@ -1,0 +1,39 @@
+{
+  "axl": {
+    "server": "c09-cucm-a.devlab.zoomint.com",
+    "user": "ccmadmin",
+    "password": "zoomadmin",
+    "ignoreCertificate": true
+  },
+  "zqm": {
+    "jtapiUser": [
+      "callrec",
+      "zpokorny"
+    ],
+    "dbServer": "pm028.pm.zoomint.com",
+    "dbPort": 5432,
+    "dbUser": "axluser",
+    "dbPassword": "a4lUs3r.",
+    "javaXTerm": "/home/admin/JAVA-Xterm/jmxterm-1.0.1-uber.jar",
+    "javaFlush": "/home/admin/JAVA-Xterm/flush_sc_cache.txt"
+  },
+  "log": {
+    "level": "TRACE",
+    "fileName": "./log/data.log",
+    "jsonFormat": false,
+    "logProgramInfo": true
+  },
+  "processing": {
+    "hoursBack": 24,
+    "userImportHour": [
+      4,
+      16
+    ],
+    "defaultTeamName": "_CUCM_imported",
+    "defaultRoleName": "Agent",
+    "updateInterval": 5,
+    "mappingType": "both",
+    "setDirection": true,
+    "coexistCcxImporter ": true
+  }
+}

@@ -1,0 +1,4 @@
+domain cz.zoom.scorecard.mbeans
+bean cz.zoom.scorecard.mbeans:name=ScorecardRemoteManagement
+run flushIbatisCache
+run flushRoleRightsCache

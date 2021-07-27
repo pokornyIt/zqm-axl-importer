@@ -1,0 +1,14 @@
+[Unit]
+Description=ZQM AXL Importer
+After=postgresql-9.6.service
+PartOf=callrec.service
+
+[Service]
+User=callrec
+Group=callrec
+Type=simple
+ExecStart=/opt/zqm-axl/zqm-axl-importer --config=/opt/zqm-axl/config.json
+NotifyAccess=all
+
+[Install]
+WantedBy=callrec.service
